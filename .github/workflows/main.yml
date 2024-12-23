@@ -32,5 +32,5 @@ jobs:
             sudo git clone https://github.com/EduardoOsteicoechea/eduardoos.com_vite.git
  
       - name: Wait for deployment
-        run: |
+        run: | 
           sleep 30
