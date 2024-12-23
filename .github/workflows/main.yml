@@ -23,7 +23,7 @@ jobs:
         with: 
           host: ${{ secrets.HOST_DNS }} 
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }} 
           script: |
             cd /var/www/html/eduardoos.com_vite
             sudo git fetch origin
