@@ -27,9 +27,11 @@ jobs:
           script: |            
             if [[ -d "/var/www/html/eduardoos.com_vite" ]]; then
               sudo rm -r /var/www/html/eduardoos.com_vite
-            fi 
+            fi
             cd /var/www/html
-            sudo git clone https://github.com/EduardoOsteicoechea/eduardoos.com_vite.git
+            sudo mkdir eduardoos.com_vite
+            cd eduardoos.com_vite
+            sudo git clone https://github.com/EduardoOsteicoechea/eduardoos.com_vite/tree/main/dist
  
       - name: Wait for deployment
         run: |
